@@ -41,5 +41,9 @@
     "config": {
         "output": "public",
         "port": "3000"
+    },
+    "dependencies": {
+        "jquery-validation": "^1.19.3",
+        "lazyload": "^2.0.0-rc.2"
     }
 }

@@ -1,0 +1,92 @@
+.contact-form {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 280px;
+  background-color: #fcfcfc;
+  padding: 1em 2em 2em;
+  position: relative;
+}
+
+.contact-form * {
+    box-sizing: border-box;
+}
+.contact-form__footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+.contact-form h2{
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.contact-form__sucess{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fcfcfc;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contact-form__header{
+  color: #000;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group input {
+  margin-bottom: 1.5em;
+}
+
+.form-group input[type=text] {
+  display: block;
+  max-width: 320px;
+  padding: 12px 16px;
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+}
+
+.form-group label {
+  color: #777;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.form-group input[type=checkbox] {
+  float: left;
+}
+
+.form-group input:not(:checked) + [type="text"] {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.form-group input {
+  transition: .3s;
+}
+.form-group{
+  position: relative;
+  input.error{
+    outline: 1px solid red;
+  }
+  .error + .error{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    color: red;
+  }
+}

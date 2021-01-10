@@ -1,0 +1,27 @@
+@mixin btn{
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    overflow: hidden;
+    will-change: transform;
+    cursor: pointer;
+    outline: none;
+}
+@mixin flexible($justify , $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+  
