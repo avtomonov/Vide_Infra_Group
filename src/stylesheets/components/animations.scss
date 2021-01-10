@@ -1,0 +1,85 @@
+.btn-effect{
+    &__content{
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            will-change: transform;
+            background: #0067da;
+            visibility: hidden;
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: translatex(100%);
+            will-change: transform;
+            background: #0067da;
+        }
+    }
+    &:hover{
+        .btn-effect__content{
+            background-color: transparent;
+            animation: bubble 2s infinite ease-in-out;
+            &:after{
+                animation: btnFadeOut  2s infinite ease-in-out;
+            }
+            &:before{
+                animation: btnFadeIn  2s infinite ease-in-out;
+            }
+        }
+    }
+}
+
+
+
+@keyframes bubble {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.6);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes btnFadeOut {
+    0% {
+        visibility: visible;
+    }
+    50% {
+        transform: translatex(-100%);
+        visibility: hidden;
+    }
+}
+@keyframes btnFadeIn {
+    50%{
+       transform: translatex(100%); 
+    }
+    100%{
+        visibility: visible;
+        transform: translatex(0%);
+    }
+}
+
+.typewriter{
+    overflow: hidden;
+    animation: animated-text 4s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}

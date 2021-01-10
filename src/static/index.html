@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Test</title>
-    <link rel="stylesheet" href="assets/stylesheets/light.css" />
-</head>
-<body>
-
-    <script src="assets/javascripts/main.js"></script>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Andrevv Avtomonov</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+        <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="stylesheet" href="assets/stylesheets/light.css" />
+        <!-- <meta name="theme-color" content="#0d1117">
+    <link rel="stylesheet" href="assets/stylesheets/dark.css" /> -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <div class="menu-toggle">
+                        <a href="#" class="btn btn--primary" data-plugin="buttonFade" data-min-scale="0.6">
+                            <span class="btn__content">
+                                Apply
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section--full-height">
+                <div class="container">
+                    <div class="contact-form theme-border-color mb-2 mt-6 mt-4-md">
+                        <h2 class="contact-form__header">Register Today</h2>
+                        <form method="POST" data-plugin="formValidate">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Name"></input>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" placeholder="Phone" ></input>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone2" placeholder="Phone"></input>
+                            </div>
+                            <div class="contact-form__footer">
+                                <button type="submit" class="btn btn--primary">Register</button>
+                            </div>
+                            <div class="contact-form__sucess" data-success>
+                                <div class="success-checkmark">
+                                  <div class="check-icon">
+                                    <span class="icon-line line-tip"></span>
+                                    <span class="icon-line line-long"></span>
+                                    <div class="icon-circle"></div>
+                                    <div class="icon-fix"></div>
+                                  </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section--full-height">
+                <div class="container">
+                    <div class="row is-grid">
+                        <div class="cell-6 cell-12-md">
+                            <img class="mb-1"
+                             data-plugin="lazyLoad"
+                             data-src="./images/image-1280.jpg"
+                             data-src="large.jpg"
+                             data-srcset="./images/image-512.jpg 512w, ./images/image-768.jpg 768w, ./images/image-1280.jpg 1024w"/>
+                        </div>
+                        <div class="cell-6 cell-12-md" data-plugin="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum asperiores impedit, animi consectetur quae laudantium possimus esse omnis odit adipisci aperiam natus quis tempore odio, repudiandae veritatis amet iure.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus provident quibusdam reiciendis saepe eligendi, magni ullam, laudantium, maiores totam ut adipisci cupiditate sed, nulla quae dignissimos fuga odit at doloribus.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          <!--   <section class="section--full-height">
+                <div class="container">
+                    <div class="btn-effect">
+                        <a href="#" class="btn btn--primary btn-effect__content">
+                            <span class="btn__content">
+                                Apply
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section> -->
+        </main>
+        <script src="assets/javascripts/main.js"></script>
+    </body>
 </html>

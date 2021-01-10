@@ -1,0 +1,14 @@
+@import "_variables";
+@import "_mixins";
+html,
+body{
+	font: $font-light;
+	margin: 0;
+	height: 100%;
+	color: $color-text-light;
+	background: $color-background-light;
+	min-width: $body-min-width;
+	.theme-border-color{
+		border: 1px solid $line-color-light;
+	}
+}

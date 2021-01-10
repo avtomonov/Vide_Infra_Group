@@ -1,0 +1,23 @@
+// Размеры
+$body-min-width: 320px; // минимальная ширина body/html 
+$container-width: 1200px; // ширина .container
+$window-height: 100vh;
+$gutter-width-primary: 1em;
+$spacer: 1em;
+$gutter-width-primary: 0px; // внутренние паддинги в ячейках сетки
+$gutter-width-secondary: 1em; // внутренние паддинги в ячейках сетки в .is-grid
+
+
+//light theme
+$color-background-light: #ffffff;
+$color-text-light: #0d1117;
+$font-light: 100% Arial;
+$line-color-light: #ccc;
+
+
+//dark theme
+$font-dark: 100% Arial;
+$color-background-dark: #0d1117;
+$color-text-dark: #c9d1d9;
+$line-color-dark: #333;
+
